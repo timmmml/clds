@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "clds"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "jax",
+    "jaxlib",
+    "numpy",
+    "scipy",
+    "jaxtyping",
+    "tqdm",
+    "numpyro",
+    "mpmath",
+]
+
+[tool.setuptools]
+py-modules = [
+    "models",
+    "params",
+    "inference",
+    "loader",
+    "postprocessing",
+    "utils",
+    "visualizations",
+]
